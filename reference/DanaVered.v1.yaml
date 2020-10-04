@@ -33,10 +33,38 @@ paths:
         - app_id: []
       parameters:
         - schema:
-            type: integer
+            type: string
           in: query
           name: Zip
           description: Zip Description
+        - schema:
+            type: string
+          in: query
+          name: Units
+        - schema:
+            type: string
+          in: query
+          name: q
+        - schema:
+            type: string
+          in: query
+          name: id
+        - schema:
+            type: string
+          in: query
+          name: lat
+        - schema:
+            type: string
+          in: query
+          name: lon
+        - schema:
+            type: string
+          in: query
+          name: lang
+        - schema:
+            type: string
+          in: query
+          name: mode
       description: Gets weather info
     parameters: []
 components:
