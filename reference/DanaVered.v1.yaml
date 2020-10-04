@@ -29,8 +29,6 @@ paths:
         - Weather endpoints
       responses: {}
       operationId: get-Weather
-      security:
-        - app_id: []
       parameters:
         - schema:
             type: string
@@ -66,6 +64,8 @@ paths:
           in: query
           name: mode
       description: Gets weather info
+      security:
+        - app_id: []
     parameters: []
 components:
   schemas: {}
