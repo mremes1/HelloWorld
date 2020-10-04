@@ -21,7 +21,19 @@ servers:
     description: ''
   - url: ''
     description: ''
-paths: {}
+paths:
+  /Weather:
+    get:
+      summary: Weather
+      tags:
+        - Weather endpoints
+      responses: {}
+      operationId: get-Weather
+      security:
+        - app_id: []
+      parameters: []
+      description: Gets weather info
+    parameters: []
 components:
   schemas: {}
   securitySchemes:
@@ -29,3 +41,5 @@ components:
       type: apiKey
       in: query
       name: appid
+tags:
+  - name: Weather endpoints
