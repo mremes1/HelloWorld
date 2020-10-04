@@ -77,6 +77,6 @@ components:
     app_id:
       type: apiKey
       in: query
-      name: 4ca71b5d83144accb9bbb8639db89283
+      name: appid
 tags:
   - name: Weather endpoints
