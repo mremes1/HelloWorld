@@ -65,14 +65,14 @@ paths:
           name: mode
       description: Gets weather info
       security:
-        - app-id: []
+        - app_id: []
     parameters: []
 components:
   schemas: {}
   securitySchemes:
-    app-id:
+    app_id:
       type: apiKey
-      in: header
-      name: 4ca71b5d83144accb9bbb8639db89283
+      in: query
+      name: appid
 tags:
   - name: Weather endpoints
