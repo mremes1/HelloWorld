@@ -35,8 +35,8 @@ paths:
         - schema:
             type: integer
           in: query
-          name: wind
-          description: Wind Description
+          name: Zip
+          description: Zip Description
       description: Gets weather info
     parameters: []
 components:
