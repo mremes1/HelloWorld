@@ -72,7 +72,7 @@ components:
   securitySchemes:
     app_id:
       type: apiKey
-      in: header
+      in: query
       name: appid
 tags:
   - name: Weather endpoints
