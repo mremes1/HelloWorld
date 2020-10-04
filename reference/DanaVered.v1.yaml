@@ -65,12 +65,12 @@ paths:
           name: mode
       description: Gets weather info
       security:
-        - app_id: []
+        - 4ca71b5d83144accb9bbb8639db89283: []
     parameters: []
 components:
   schemas: {}
   securitySchemes:
-    app_id:
+    4ca71b5d83144accb9bbb8639db89283:
       type: apiKey
       in: query
       name: 4ca71b5d83144accb9bbb8639db89283
