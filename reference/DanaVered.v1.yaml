@@ -74,5 +74,6 @@ components:
       type: apiKey
       in: query
       name: appid
+      description: API Key
 tags:
   - name: Weather endpoints
