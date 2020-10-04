@@ -63,6 +63,10 @@ paths:
             type: string
           in: query
           name: mode
+        - schema:
+            type: string
+          in: query
+          name: appid
       description: Gets weather info
       security:
         - app_id: []
