@@ -75,8 +75,8 @@ components:
   schemas: {}
   securitySchemes:
     app_id:
-      name: API Key
       type: apiKey
       in: query
+      name: 4ca71b5d83144accb9bbb8639db89283
 tags:
   - name: Weather endpoints
