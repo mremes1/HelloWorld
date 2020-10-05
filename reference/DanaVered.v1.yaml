@@ -63,6 +63,22 @@ paths:
                         type: number
                       Sunset:
                         type: number
+                      dt:
+                        type: number
+                  Clouds:
+                    type: object
+                    properties:
+                      all:
+                        type: number
+                  Wind:
+                    type: object
+                    properties:
+                      Speed:
+                        type: number
+                      Deg:
+                        type: number
+                      Visibility:
+                        type: number
               examples:
                 example-1: {}
       operationId: get-Weather
