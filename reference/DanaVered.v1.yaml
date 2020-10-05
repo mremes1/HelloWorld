@@ -79,6 +79,21 @@ paths:
                         type: number
                       Visibility:
                         type: number
+                  Main:
+                    type: object
+                    properties:
+                      Temp:
+                        type: number
+                      feels_like:
+                        type: number
+                      Temp_min:
+                        type: number
+                      Temp_max:
+                        type: number
+                      Pressure:
+                        type: number
+                      Humidity:
+                        type: number
               examples:
                 example-1: {}
       operationId: get-Weather
