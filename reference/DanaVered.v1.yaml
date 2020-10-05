@@ -27,7 +27,37 @@ paths:
       summary: Weather
       tags:
         - Weather endpoints
-      responses: {}
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  Coord:
+                    type:
+                      - string
+                      - object
+                    properties:
+                      Ion:
+                        type:
+                          - string
+                          - number
+                      'lat:':
+                        type:
+                          - string
+                          - number
+                  Cod:
+                    type:
+                      - string
+                      - number
+                  name:
+                    type: string
+                  Id:
+                    type: number
+              examples:
+                example-1: {}
       operationId: get-Weather
       parameters:
         - schema:
