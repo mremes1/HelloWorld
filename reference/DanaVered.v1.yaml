@@ -183,14 +183,6 @@ paths:
         - app_id: []
       requestBody:
         content:
-          application/xml:
-            schema:
-              $ref: '#/components/schemas/Unauthorized_Response'
-            examples:
-              example-1:
-                value:
-                  Cod: 0
-                  Message: string
           multipart/form-data:
             schema:
               type: object
@@ -215,6 +207,9 @@ paths:
             schema:
               type: object
               properties: {}
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/Unauthorized_Response'
         description: ''
     parameters: []
 components:
