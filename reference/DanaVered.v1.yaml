@@ -130,8 +130,7 @@ paths:
                         Icon:
                           type: string
                           description: This is Weather Icon
-              examples:
-                example-1: {}
+              examples: {}
       operationId: get-Weather
       parameters:
         - schema:
@@ -176,7 +175,18 @@ paths:
         - app_id: []
     parameters: []
 components:
-  schemas: {}
+  schemas:
+    Unauthorized_Response:
+      title: Unauthorized_Response
+      type: object
+      properties:
+        Cod:
+          type: integer
+        Message:
+          type: string
+      required:
+        - Cod
+        - Message
   securitySchemes:
     app_id:
       type: apiKey
