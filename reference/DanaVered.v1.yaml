@@ -36,18 +36,12 @@ paths:
                 type: object
                 properties:
                   Coord:
-                    type:
-                      - string
-                      - object
+                    type: object
                     properties:
                       Ion:
-                        type:
-                          - string
-                          - number
-                      'lat:':
-                        type:
-                          - string
-                          - number
+                        type: number
+                      lat:
+                        type: string
                   Cod:
                     type:
                       - string
@@ -56,6 +50,19 @@ paths:
                     type: string
                   Id:
                     type: number
+                  sys:
+                    type: object
+                    properties:
+                      type:
+                        type: number
+                      Id:
+                        type: number
+                      Country:
+                        type: string
+                      Sunrise:
+                        type: number
+                      Sunset:
+                        type: number
               examples:
                 example-1: {}
       operationId: get-Weather
