@@ -40,16 +40,19 @@ paths:
                     properties:
                       Ion:
                         type: number
+                        description: This is Longtitute
                       lat:
                         type: string
+                        description: This is Latitude
                   Cod:
-                    type:
-                      - string
-                      - number
+                    description: This is Cod
+                    type: number
                   name:
                     type: string
+                    description: This is Name
                   Id:
                     type: number
+                    description: This is ID
                   sys:
                     type: object
                     properties:
@@ -61,10 +64,13 @@ paths:
                         type: string
                       Sunrise:
                         type: number
+                        description: This is Subrise
                       Sunset:
                         type: number
+                        description: This is Subset
                       dt:
                         type: number
+                        description: This is Dt
                   Clouds:
                     type: object
                     properties:
@@ -75,40 +81,55 @@ paths:
                     properties:
                       Speed:
                         type: number
+                        description: This is Speed
                       Deg:
                         type: number
+                        description: This is Degrees
                       Visibility:
                         type: number
+                        description: This is Visibility
                   Main:
                     type: object
                     properties:
                       Temp:
                         type: number
+                        description: This is Temp
                       feels_like:
                         type: number
+                        description: This is Feels Like
                       Temp_min:
                         type: number
+                        description: This is Tem Min
                       Temp_max:
                         type: number
+                        description: This is Temp Max
                       Pressure:
                         type: number
+                        description: This is Pressure
                       Humidity:
                         type: number
+                        description: This is Humidity
                       Base:
                         type: string
+                        description: This is Base
                   Weather:
                     type: array
+                    description: This is a Weather Array Object
                     items:
                       type: object
                       properties:
                         Id:
                           type: number
+                          description: This is Weather ID
                         Main:
                           type: string
+                          description: This is Weather Main
                         Description:
                           type: string
+                          description: This is Weather Description
                         Icon:
                           type: string
+                          description: This is Weather Icon
               examples:
                 example-1: {}
       operationId: get-Weather
