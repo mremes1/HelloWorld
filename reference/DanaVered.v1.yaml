@@ -22,7 +22,7 @@ servers:
   - url: ''
     description: ''
 paths:
-  /Weather:
+  /weather:
     get:
       summary: Weather
       tags:
