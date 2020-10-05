@@ -131,6 +131,10 @@ paths:
                           type: string
                           description: This is Weather Icon
               examples: {}
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
       operationId: get-Weather
       parameters:
         - schema:
@@ -173,6 +177,32 @@ paths:
       description: Gets weather info
       security:
         - app_id: []
+      requestBody:
+        content:
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/Unauthorized_Response'
+          multipart/form-data:
+            schema:
+              type: object
+              properties: {}
+          text/html:
+            schema:
+              type: object
+              properties: {}
+          text/plain:
+            schema:
+              type: object
+              properties: {}
+          application/EDI-X12:
+            schema:
+              type: object
+              properties: {}
+          application/EDIFACT:
+            schema:
+              type: object
+              properties: {}
+        description: ''
     parameters: []
 components:
   schemas:
@@ -187,6 +217,10 @@ components:
       required:
         - Cod
         - Message
+      x-examples:
+        example-1:
+          Cod: 0
+          Message: string
   securitySchemes:
     app_id:
       type: apiKey
