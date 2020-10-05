@@ -94,6 +94,21 @@ paths:
                         type: number
                       Humidity:
                         type: number
+                      Base:
+                        type: string
+                  Weather:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        Id:
+                          type: number
+                        Main:
+                          type: string
+                        Description:
+                          type: string
+                        Icon:
+                          type: string
               examples:
                 example-1: {}
       operationId: get-Weather
