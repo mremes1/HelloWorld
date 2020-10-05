@@ -131,6 +131,10 @@ paths:
                           type: string
                           description: This is Weather Icon
               examples: {}
+            application/xml:
+              schema:
+                type: object
+                properties: {}
         '400':
           description: Bad Request
         '401':
@@ -182,6 +186,11 @@ paths:
           application/xml:
             schema:
               $ref: '#/components/schemas/Unauthorized_Response'
+            examples:
+              example-1:
+                value:
+                  Cod: 0
+                  Message: string
           multipart/form-data:
             schema:
               type: object
@@ -199,6 +208,10 @@ paths:
               type: object
               properties: {}
           application/EDIFACT:
+            schema:
+              type: object
+              properties: {}
+          application/json:
             schema:
               type: object
               properties: {}
